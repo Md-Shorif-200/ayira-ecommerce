@@ -5,7 +5,7 @@ import React from 'react';
 import { FaDownload } from "react-icons/fa";
 
 // Define your server URL, preferably from an environment variable
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = "https://ayira-ecommerce-backend.vercel.app";
 
 const DownLoad = ({ productId }) => {
     return (

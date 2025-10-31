@@ -35,7 +35,7 @@ export default function AddressContent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/address', formData);
+      const res = await axios.post('https://ayira-ecommerce-backend.vercel.app/address', formData);
    
       alert('Address saved successfully!');
     } catch (err) {

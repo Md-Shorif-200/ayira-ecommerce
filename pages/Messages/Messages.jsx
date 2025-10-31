@@ -7,7 +7,7 @@ import { Search, Phone, Send, ArrowLeft } from "lucide-react";
 import io from "socket.io-client"; // This is REQUIRED here for the user-side connection
 import useSingleUser from "../../Hooks/useSingleUser"; // Adjust path if needed
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://ayira-ecommerce-backend.vercel.app";
 
 const Messages = ({ socket: propSocket }) => {
   const { singleUser, isLoading } = useSingleUser();

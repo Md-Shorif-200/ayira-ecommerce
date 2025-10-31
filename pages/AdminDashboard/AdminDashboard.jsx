@@ -10,7 +10,7 @@ import LoadingSpinner from "../../components/LoadingSpinner";
 import AdminSidebar from "./AdminSidebar";
 import DashboardMain from "./DashboardMain";
 import DashboardContent from "./DashboardContent";
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://ayira-ecommerce-backend.vercel.app";
 
 const DashboardIcon = ({ className }) => (
   <svg

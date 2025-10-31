@@ -21,7 +21,7 @@ const BlogPostCard = ({ blog }) => {
   }
   const shortDescriptionJson = safelyParseJSON(blog.shortDescription);
   const img_api =
-    process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
+    process.env.NEXT_PUBLIC_API_BASE_URL || "https://ayira-ecommerce-backend.vercel.app";
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex flex-col">

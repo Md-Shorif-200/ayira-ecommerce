@@ -7,7 +7,8 @@ const nextConfig = {
       "plus.unsplash.com",
       "srv863654.hstgr.cloud",
       "api.aaryansourcing.com",
-      "localhost"
+        "localhost",
+      "ayira-ecommerce-backend.vercel.app"
     ],
   },
 };
