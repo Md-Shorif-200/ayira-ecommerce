@@ -1,4 +1,5 @@
 import Script from "next/script";
+import SizeChartPage from "../../../pages/SizeChartPage";
 
 
 
