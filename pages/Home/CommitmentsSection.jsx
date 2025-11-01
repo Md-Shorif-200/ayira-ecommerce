@@ -80,7 +80,7 @@ const CommitmentsSection = () => {
                 transition-all duration-300
                 hover:bg-white/8 hover:ring-white/25
                 hover:shadow-[0_10px_28px_rgba(0,0,0,0.45)]
-                focus-within:ring-white/40
+                focus-within:ring-white/30
               "
             >
               <span
