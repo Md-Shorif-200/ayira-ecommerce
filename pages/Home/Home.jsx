@@ -25,22 +25,22 @@ const Home = ({
 }) => {
   return (
     <>
-      {/* <Banner slides={slides} /> */}
-      {/* <QualitySection /> */}
-      {/* <CollectionsGrid /> */}
-      {/* <NewArrivals allProducts={newarrivalData} /> */}
-      {/* <FeaturedCollection allProducts={featuredData} /> */}
-      {/* <Collections /> */}
-      {/* <CommitmentsSection /> */}
-      {/* <Trending allProducts={trendingData} /> */}
-      {/* <LookbookSection /> */}
-      {/* <WhyChooseAA /> */}
-      {/* <AtAGlance /> */}
-      {/* <Newsletter /> */}
-      {/* <Testimonials /> */}
-      {/* <CoreCustomersSection /> */}
-      {/* <LatestNewsSection blogs={blogs} commentCounts={commentCounts} /> */}
-      {/* <InstagramFeed /> */}
+      <Banner slides={slides} />
+      <QualitySection />
+      <CollectionsGrid />
+      <NewArrivals allProducts={newarrivalData} />
+      <FeaturedCollection allProducts={featuredData} />
+      <Collections />
+      <CommitmentsSection />
+      <Trending allProducts={trendingData} />
+      <LookbookSection />
+      <WhyChooseAA />
+      <AtAGlance />
+      <Newsletter />
+      <Testimonials />
+      <CoreCustomersSection />
+      <LatestNewsSection blogs={blogs} commentCounts={commentCounts} />
+      <InstagramFeed />
     </>
   );
 };
