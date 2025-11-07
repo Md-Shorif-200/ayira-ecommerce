@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  AIYRA — B2B Product Inquiry & Showcase Platform
 
-## Getting Started
+**AIYRA** is a modern **B2B product inquiry and showcase platform** designed to connect businesses and buyers through interactive product displays, intelligent communication, and streamlined admin management.  
+It integrates **AI-powered chat**, **real-time notifications**, and **data-driven analytics** to make the B2B experience smarter and more engaging.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Live Link
+ **[Visit AIYRA](https://ayira-ecommerce-1.vercel.app/)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+####  Server-side Github : https://github.com/Md-Shorif-200/Ayira-Ecommerce-Server
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+#### admin email : arif.hossain456@gmail.com
+#### password : arif#345
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+###  AI-Powered Chat System
+- Integrated **Gemini AI** for intelligent, real-time conversations between users and admin.
+- Personalized chat experience for inquiries and product discussions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+###  Advanced Admin Dashboard
+- Manage products, blogs, and banners from a single interface.
+- Visual analytics powered by **Chart.js**.
+- Real-time updates for content and performance metrics.
 
-## Deploy on Vercel
+###  Smart Order & Inquiry System
+- Dynamic order form powered by **Nodemailer** for instant admin notifications.
+- Secure manual order handling and email confirmations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Interactive Content & Engagement
+- Rich text editing with **Tiptap Editor** for product and blog creation.
+- Animated, responsive design using **AOS** and **Swiper.js**.
+- Seamless image management via **Cloudinary**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###  Real-Time Interaction
+- Live chat and notification system using **Socket.io**.
+- Firebase authentication for secure and scalable user access.
+
+---
+
+##  Tech Stack
+
+### **Frontend**
+- ⚛️ React  
+- 🖥️ Next.js  
+- 🎨 Tailwind CSS  
+- 📝 Tiptap Editor  
+- 📊 Chart.js  
+- 🎞️ Swiper.js  
+- ✨ AOS Animation  
+- ☁️ Cloudinary  
+- 🔥 Firebase  
+
+### **Backend**
+- 🧩 Node.js  
+- 🚀 Express.js  
+- 🍃 MongoDB  
+- 📁 Multer  
+- 🧠 OpenAI (Gemini AI Integration)  
+- ✉️ Nodemailer  
+- 🔌 Socket.io  
+
+
+
