@@ -31,20 +31,14 @@ const SocialLogIn = () => {
 
       if (res.data.insertedId) {
         toast.success("Account created successfully!");
-        router.push("/myaccount");
-      } else if (
-        res.data.message === "You are already registered. Please log in."
-      ) {
-        const { data: existingUser } = await axiosSecure.get(
-          `/api/user/${user.email}`
-        );
-        toast.success("Logged in successfully!");
-        if (existingUser?.role === "admin") {
-          router.push("/admindashboard");
-        } else {
-          router.push("/myaccount");
-        }
+        router.push("/");
+      } else {
+        // res.data.message === "You are already registered. Please log in."
+         toast.success('log in successfull');
+         router.push('/')
       }
+
+      
     } catch (error) {
       toast.error(error.message || "Something went wrong!");
     } finally {

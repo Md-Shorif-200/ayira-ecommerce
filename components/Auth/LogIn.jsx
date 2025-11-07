@@ -1,5 +1,5 @@
 "use client";
-import  { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { FaSpinner, FaEye, FaEyeSlash } from "react-icons/fa";
@@ -25,21 +25,10 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const result = await logIn(data.email, data.password);
-      const loggedInUser = result.user;
 
-      if (loggedInUser) {
-        const res = await axiosSecure.get(`/api/user/${loggedInUser.email}`);
-        const singleUser = res.data;
+      toast.success("Logged in successfully", {});
 
-        toast.success("Logged in successfully", {
-          duration: 1500,
-        });
-        if (singleUser?.role === "admin") {
-          router.push("/admindashboard");
-        } else {
-          router.push("/myaccount");
-        }
-      }
+      router.push("/");
     } catch (error) {
       console.error("Login Error:", error);
       toast.error("Login failed. Please check your credentials!");
