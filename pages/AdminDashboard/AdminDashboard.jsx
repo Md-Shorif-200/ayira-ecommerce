@@ -237,7 +237,7 @@ export default function AdminDashboard({ UserData, allData, allOders }) {
       setBlogs(Array.isArray(blogsRes.data.blogs) ? blogsRes.data.blogs : []);
       setCategories(categoriesRes.data.map((cat) => cat.value || cat));
     } catch (error) {
-      toast.error("Could not load blog data.");
+      // toast.error("Could not load blog data.");
       setBlogs([]);
     } finally {
       setIsBlogsLoading(false);
@@ -248,10 +248,11 @@ export default function AdminDashboard({ UserData, allData, allOders }) {
     setIsStaffLoading(true);
     try {
       const response = await axiosSecure.get("/api/staff");
+       console.log(response)
       setStaffList(response.data);
     } catch (error) {
       console.error("Error fetching staff:", error);
-      toast.error("Could not load staff data.");
+      // toast.error("Could not load staff data.");
     } finally {
       setIsStaffLoading(false);
     }

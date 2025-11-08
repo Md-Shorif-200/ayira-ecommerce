@@ -3,24 +3,11 @@ import Image from 'next/image';
 import { FaEdit, FaExclamationTriangle } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import LoadingSpinner from '../../../components/LoadingSpinner';
-import { TrashIcon, EyeIcon as SolidEyeIcon } from '@heroicons/react/24/solid'; // Using solid for clarity
+import { TrashIcon, EyeIcon as SolidEyeIcon } from '@heroicons/react/24/solid';
 
-const img_api = process.env.NEXT_PUBLIC_API_BASE_URL || '';
+const BlogList = ({ blogs = [], loading = false, onView = () => {}, onEdit = () => {}, onDelete = () => {} }) => {
 
-const BlogList = ({
-  blogs = [],
-  loading = false,
-  categories = [],
-  searchTerm = '',
-  setSearchTerm = () => {},
-  selectedCategory = 'all',
-  setSelectedCategory = () => {},
-  onView = () => {},
-  onEdit = () => {},
-  onDelete = () => {}, // This prop will receive handleDeleteBlog from the parent
-}) => {
-
-  // This function correctly shows the UI and then calls the parent's logic.
+  // Delete confirmation toast
   const handleDeleteConfirmation = (blogId, blogTitle) => {
     toast((t) => (
       <div className="flex flex-col items-center gap-4 p-4 bg-white shadow-lg rounded-md">
@@ -41,7 +28,6 @@ const BlogList = ({
           <button
             onClick={() => {
               toast.dismiss(t.id);
-              // This now calls the parent's handleDeleteBlog function
               onDelete(blogId); 
             }}
             className="px-4 py-1.5 text-sm font-semibold text-white bg-red-600 rounded-md hover:bg-red-700 transition-colors"
@@ -50,36 +36,11 @@ const BlogList = ({
           </button>
         </div>
       </div>
-    ), {
-      duration: 6000,
-    });
+    ), { duration: 6000 });
   };
 
   return (
     <>
-      {/* Search + Filter */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-6">
-        <input
-          type="text"
-          placeholder="Search blogs..."
-          className="flex-grow p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <select
-          className="p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-        >
-          <option value="all">All Categories</option>
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
-      </div>
-
       {/* Blog List */}
       {loading ? (
         <LoadingSpinner />
@@ -94,7 +55,7 @@ const BlogList = ({
                 {blog.image && (
                   <div className="relative w-16 h-16 mr-4 hidden sm:block flex-shrink-0">
                     <Image
-                      src={`${img_api}${blog.image}`}
+                      src={blog.image}
                       alt={blog.title}
                       fill
                       sizes="64px"

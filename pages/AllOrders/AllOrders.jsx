@@ -178,13 +178,13 @@ const AllOrders = () => {
                     </div>
 
                     <div className="flex items-center gap-2 sm:gap-4 text-gray-500 flex-shrink-0 sm:ml-4 self-end sm:self-auto">
-                      <button
+                      {/* <button
                         onClick={() => setViewOrder(order)}
                         className="p-2 text-gray-500 hover:bg-gray-100 rounded-full transition-colors"
                         aria-label="View Details"
                       >
                         <EyeIcon className="h-6 w-6" />
-                      </button>
+                      </button> */}
                     
                       <button
                         onClick={() =>

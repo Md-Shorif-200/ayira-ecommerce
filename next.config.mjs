@@ -7,8 +7,9 @@ const nextConfig = {
       "plus.unsplash.com",
       "srv863654.hstgr.cloud",
       "api.aaryansourcing.com",
-        "localhost",
-      "ayira-ecommerce-backend.vercel.app"
+      "localhost",
+      "ayira-ecommerce-backend.vercel.app",
+      "res.cloudinary.com" // added Cloudinary domain
     ],
   },
 };

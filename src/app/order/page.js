@@ -1,4 +1,5 @@
 import OrderNow from "../../../pages/AdminDashboard/OrderPage/OrderNow";
+import OrderPage from "../../../pages/Shop/Order/OrderPage";
 
 export const metadata = {
   title: "Order",
@@ -14,7 +15,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <OrderNow></OrderNow>
+      <OrderPage></OrderPage>
     </>
   );
 };
