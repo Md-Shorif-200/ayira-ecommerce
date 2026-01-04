@@ -1,6 +1,6 @@
-#  AIYRA — B2B Product Inquiry & Showcase Platform
+#  AAryan — B2B Product Inquiry & Showcase Platform
 
-**AIYRA** is a modern **B2B product inquiry and showcase platform** designed to connect businesses and buyers through interactive product displays, intelligent communication, and streamlined admin management.  
+**AAryan** is a modern **B2B product inquiry and showcase platform** designed to connect businesses and buyers through interactive product displays, intelligent communication, and streamlined admin management.  
 It integrates **AI-powered chat**, **real-time notifications**, and **data-driven analytics** to make the B2B experience smarter and more engaging.
 
 ---
